@@ -5,21 +5,21 @@ import java.util.List;
 import bean.UserBean;
 
 public class UserSearchResponseBean {
-	private ResponseBean response;
+	private CT_Resp_ResponseBean response;
 	private List<UserBean> user;
 	
 	public UserSearchResponseBean(){}
 
-	public UserSearchResponseBean(ResponseBean response, List<UserBean> user) {
+	public UserSearchResponseBean(CT_Resp_ResponseBean response, List<UserBean> user) {
 		this.response = response;
 		this.user = user;
 	}
 
-	public ResponseBean getResponse() {
+	public CT_Resp_ResponseBean getResponse() {
 		return response;
 	}
 
-	public void setResponse(ResponseBean response) {
+	public void setResponse(CT_Resp_ResponseBean response) {
 		this.response = response;
 	}
 
