@@ -4,25 +4,25 @@ import java.util.Date;
 
 public class LoginResponseBean {
 	
-	private ResponseBean response;
+	private CT_Resp_ResponseBean response;
 	private String accessToken;
 	private String accessDatetime;
 	private UserBean user;
 	
 	public LoginResponseBean(){}
 
-	public LoginResponseBean(ResponseBean response, String accessToken, String accessDatetime, UserBean user) {
+	public LoginResponseBean(CT_Resp_ResponseBean response, String accessToken, String accessDatetime, UserBean user) {
 		this.response = response;
 		this.accessToken = accessToken;
 		this.accessDatetime = accessDatetime;
 		this.user = user;
 	}
 
-	public ResponseBean getResponse() {
+	public CT_Resp_ResponseBean getResponse() {
 		return response;
 	}
 
-	public void setResponse(ResponseBean response) {
+	public void setResponse(CT_Resp_ResponseBean response) {
 		this.response = response;
 	}
 
