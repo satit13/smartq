@@ -11,7 +11,7 @@ import java.util.UUID;
 
 import bean.LoginBean;
 import bean.LoginResponseBean;
-import bean.ResponseBean;
+import bean.CT_Resp_ResponseBean;
 import bean.UserBean;
 import bean.UserRegisterBean;
 import bean.UserSearchBean;
@@ -23,7 +23,7 @@ public class UserController {
 	private final QueueConnect ds = QueueConnect.INSTANCE;
 	private String Textstring;
 	
-	ResponseBean response = new ResponseBean();
+	CT_Resp_ResponseBean response = new CT_Resp_ResponseBean();
 	UserBean user = new UserBean();
 	List<UserBean> userList = new ArrayList<UserBean>();
 	LoginResponseBean loginResponse = new LoginResponseBean();
@@ -257,7 +257,7 @@ public class UserController {
 	}
 	
 	//register method
-	public ResponseBean register(String dbName,UserRegisterBean userRegister) {
+	public CT_Resp_ResponseBean register(String dbName,UserRegisterBean userRegister) {
 		java.text.SimpleDateFormat dt= new java.text.SimpleDateFormat();
 		dt.applyPattern("yyyy-MM-dd HH:mm:ss.S");
 		Date dateNow = new Date();
@@ -363,7 +363,7 @@ public class UserController {
 	}
 	
 	//user edit
-	public ResponseBean userEdit(String dbName,UserRegisterBean userRegister) {
+	public CT_Resp_ResponseBean userEdit(String dbName,UserRegisterBean userRegister) {
 		java.text.SimpleDateFormat dt= new java.text.SimpleDateFormat();
 		dt.applyPattern("yyyy-MM-dd HH:mm:ss.S");
 		Date dateNow = new Date();
